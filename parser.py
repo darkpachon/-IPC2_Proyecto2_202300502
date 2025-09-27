@@ -1,6 +1,5 @@
 import xml.etree.ElementTree as ET
 from models import Greenhouse, Drone, Plant, Plan
-
 def parse_input_xml(path):
     tree = ET.parse(path)
     root = tree.getroot()

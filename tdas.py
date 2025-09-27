@@ -3,13 +3,11 @@ class Node:
         self.value = value
         self.next = None
         self.prev = None
-
 class LinkedList:
     def __init__(self):
         self.head = None
         self.tail = None
         self._size = 0
-
     def add_last(self, value):
         node = Node(value)
         if self.head is None:
@@ -20,7 +18,6 @@ class LinkedList:
             self.tail = node
         self._size += 1
         return node
-
     def add_first(self, value):
         node = Node(value)
         if self.head is None:
@@ -31,7 +28,6 @@ class LinkedList:
             self.head = node
         self._size += 1
         return node
-
     def pop_first(self):
         if self.head is None:
             return None
@@ -44,13 +40,11 @@ class LinkedList:
         node.next = None
         self._size -= 1
         return node.value
-
     def __iter__(self):
         current = self.head
         while current:
             yield current.value
             current = current.next
-
     def find(self, pred):
         current = self.head
         while current:
@@ -58,13 +52,10 @@ class LinkedList:
                 return current.value
             current = current.next
         return None
-
     def is_empty(self):
         return self._size == 0
-
     def size(self):
         return self._size
-
 class Queue:
     def __init__(self):
         self._list = LinkedList()
@@ -76,7 +67,6 @@ class Queue:
         return iter(self._list)
     def is_empty(self):
         return self._list.is_empty()
-
 class Stack:
     def __init__(self):
         self._list = LinkedList()
