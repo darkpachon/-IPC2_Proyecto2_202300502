@@ -1,0 +1,382 @@
+<?xml version="1.0" ?>
+<datosSalida>
+  <listaInvernaderos>
+    <invernadero nombre="Invernadero Santa Rosa">
+      <listaPlanes>
+        <plan nombre="Semana 1">
+          <tiempoOptimoSegundos>60</tiempoOptimoSegundos>
+          <aguaRequeridaLitros>3.0</aguaRequeridaLitros>
+          <fertilizanteRequeridoGramos>300.0</fertilizanteRequeridoGramos>
+          <eficienciaDronesRegadores>
+            <dron nombre="DR01" litrosAgua="3.0" gramosFertilizante="300.0"/>
+            <dron nombre="DR02" litrosAgua="0" gramosFertilizante="0"/>
+            <dron nombre="DR03" litrosAgua="0" gramosFertilizante="0"/>
+            <dron nombre="DR04" litrosAgua="0" gramosFertilizante="0"/>
+          </eficienciaDronesRegadores>
+          <instrucciones>
+            <tiempo segundos="1">
+              <dron nombre="DR01" accion="Regar"/>
+              <dron nombre="DR02" accion="Adelante (H2P1)"/>
+              <dron nombre="DR03" accion="Adelante (H3P1)"/>
+              <dron nombre="DR04" accion="Adelante (H2P1)"/>
+            </tiempo>
+            <tiempo segundos="2">
+              <dron nombre="DR01" accion="Adelante (H1P1)"/>
+              <dron nombre="DR02" accion="Esperar"/>
+              <dron nombre="DR03" accion="Esperar"/>
+              <dron nombre="DR04" accion="Esperar"/>
+            </tiempo>
+            <tiempo segundos="3">
+              <dron nombre="DR01" accion="Adelante (H1P2)"/>
+              <dron nombre="DR02" accion="Esperar"/>
+              <dron nombre="DR03" accion="Esperar"/>
+              <dron nombre="DR04" accion="Esperar"/>
+            </tiempo>
+            <tiempo segundos="4">
+              <dron nombre="DR01" accion="Esperar"/>
+              <dron nombre="DR02" accion="Esperar"/>
+              <dron nombre="DR03" accion="Esperar"/>
+              <dron nombre="DR04" accion="Esperar"/>
+            </tiempo>
+            <tiempo segundos="5">
+              <dron nombre="DR01" accion="Esperar"/>
+              <dron nombre="DR02" accion="Esperar"/>
+              <dron nombre="DR03" accion="Esperar"/>
+              <dron nombre="DR04" accion="Esperar"/>
+            </tiempo>
+            <tiempo segundos="6">
+              <dron nombre="DR01" accion="Esperar"/>
+              <dron nombre="DR02" accion="Esperar"/>
+              <dron nombre="DR03" accion="Esperar"/>
+              <dron nombre="DR04" accion="Esperar"/>
+            </tiempo>
+            <tiempo segundos="7">
+              <dron nombre="DR01" accion="Esperar"/>
+              <dron nombre="DR02" accion="Esperar"/>
+              <dron nombre="DR03" accion="Esperar"/>
+              <dron nombre="DR04" accion="Esperar"/>
+            </tiempo>
+            <tiempo segundos="8">
+              <dron nombre="DR01" accion="Esperar"/>
+              <dron nombre="DR02" accion="Esperar"/>
+              <dron nombre="DR03" accion="Esperar"/>
+              <dron nombre="DR04" accion="Esperar"/>
+            </tiempo>
+            <tiempo segundos="9">
+              <dron nombre="DR01" accion="Esperar"/>
+              <dron nombre="DR02" accion="Esperar"/>
+              <dron nombre="DR03" accion="Esperar"/>
+              <dron nombre="DR04" accion="Esperar"/>
+            </tiempo>
+            <tiempo segundos="10">
+              <dron nombre="DR01" accion="Esperar"/>
+              <dron nombre="DR02" accion="Esperar"/>
+              <dron nombre="DR03" accion="Esperar"/>
+              <dron nombre="DR04" accion="Esperar"/>
+            </tiempo>
+            <tiempo segundos="11">
+              <dron nombre="DR01" accion="Esperar"/>
+              <dron nombre="DR02" accion="Esperar"/>
+              <dron nombre="DR03" accion="Esperar"/>
+              <dron nombre="DR04" accion="Esperar"/>
+            </tiempo>
+            <tiempo segundos="12">
+              <dron nombre="DR01" accion="Esperar"/>
+              <dron nombre="DR02" accion="Esperar"/>
+              <dron nombre="DR03" accion="Esperar"/>
+              <dron nombre="DR04" accion="Esperar"/>
+            </tiempo>
+            <tiempo segundos="13">
+              <dron nombre="DR01" accion="Esperar"/>
+              <dron nombre="DR02" accion="Esperar"/>
+              <dron nombre="DR03" accion="Esperar"/>
+              <dron nombre="DR04" accion="Esperar"/>
+            </tiempo>
+            <tiempo segundos="14">
+              <dron nombre="DR01" accion="Esperar"/>
+              <dron nombre="DR02" accion="Esperar"/>
+              <dron nombre="DR03" accion="Esperar"/>
+              <dron nombre="DR04" accion="Esperar"/>
+            </tiempo>
+            <tiempo segundos="15">
+              <dron nombre="DR01" accion="Esperar"/>
+              <dron nombre="DR02" accion="Esperar"/>
+              <dron nombre="DR03" accion="Esperar"/>
+              <dron nombre="DR04" accion="Esperar"/>
+            </tiempo>
+            <tiempo segundos="16">
+              <dron nombre="DR01" accion="Esperar"/>
+              <dron nombre="DR02" accion="Esperar"/>
+              <dron nombre="DR03" accion="Esperar"/>
+              <dron nombre="DR04" accion="Esperar"/>
+            </tiempo>
+            <tiempo segundos="17">
+              <dron nombre="DR01" accion="Esperar"/>
+              <dron nombre="DR02" accion="Esperar"/>
+              <dron nombre="DR03" accion="Esperar"/>
+              <dron nombre="DR04" accion="Esperar"/>
+            </tiempo>
+            <tiempo segundos="18">
+              <dron nombre="DR01" accion="Esperar"/>
+              <dron nombre="DR02" accion="Esperar"/>
+              <dron nombre="DR03" accion="Esperar"/>
+              <dron nombre="DR04" accion="Esperar"/>
+            </tiempo>
+            <tiempo segundos="19">
+              <dron nombre="DR01" accion="Esperar"/>
+              <dron nombre="DR02" accion="Esperar"/>
+              <dron nombre="DR03" accion="Esperar"/>
+              <dron nombre="DR04" accion="Esperar"/>
+            </tiempo>
+            <tiempo segundos="20">
+              <dron nombre="DR01" accion="Esperar"/>
+              <dron nombre="DR02" accion="Esperar"/>
+              <dron nombre="DR03" accion="Esperar"/>
+              <dron nombre="DR04" accion="Esperar"/>
+            </tiempo>
+            <tiempo segundos="21">
+              <dron nombre="DR01" accion="Esperar"/>
+              <dron nombre="DR02" accion="Esperar"/>
+              <dron nombre="DR03" accion="Esperar"/>
+              <dron nombre="DR04" accion="Esperar"/>
+            </tiempo>
+            <tiempo segundos="22">
+              <dron nombre="DR01" accion="Esperar"/>
+              <dron nombre="DR02" accion="Esperar"/>
+              <dron nombre="DR03" accion="Esperar"/>
+              <dron nombre="DR04" accion="Esperar"/>
+            </tiempo>
+            <tiempo segundos="23">
+              <dron nombre="DR01" accion="Esperar"/>
+              <dron nombre="DR02" accion="Esperar"/>
+              <dron nombre="DR03" accion="Esperar"/>
+              <dron nombre="DR04" accion="Esperar"/>
+            </tiempo>
+            <tiempo segundos="24">
+              <dron nombre="DR01" accion="Esperar"/>
+              <dron nombre="DR02" accion="Esperar"/>
+              <dron nombre="DR03" accion="Esperar"/>
+              <dron nombre="DR04" accion="Esperar"/>
+            </tiempo>
+            <tiempo segundos="25">
+              <dron nombre="DR01" accion="Esperar"/>
+              <dron nombre="DR02" accion="Esperar"/>
+              <dron nombre="DR03" accion="Esperar"/>
+              <dron nombre="DR04" accion="Esperar"/>
+            </tiempo>
+            <tiempo segundos="26">
+              <dron nombre="DR01" accion="Esperar"/>
+              <dron nombre="DR02" accion="Esperar"/>
+              <dron nombre="DR03" accion="Esperar"/>
+              <dron nombre="DR04" accion="Esperar"/>
+            </tiempo>
+            <tiempo segundos="27">
+              <dron nombre="DR01" accion="Esperar"/>
+              <dron nombre="DR02" accion="Esperar"/>
+              <dron nombre="DR03" accion="Esperar"/>
+              <dron nombre="DR04" accion="Esperar"/>
+            </tiempo>
+            <tiempo segundos="28">
+              <dron nombre="DR01" accion="Esperar"/>
+              <dron nombre="DR02" accion="Esperar"/>
+              <dron nombre="DR03" accion="Esperar"/>
+              <dron nombre="DR04" accion="Esperar"/>
+            </tiempo>
+            <tiempo segundos="29">
+              <dron nombre="DR01" accion="Esperar"/>
+              <dron nombre="DR02" accion="Esperar"/>
+              <dron nombre="DR03" accion="Esperar"/>
+              <dron nombre="DR04" accion="Esperar"/>
+            </tiempo>
+            <tiempo segundos="30">
+              <dron nombre="DR01" accion="Esperar"/>
+              <dron nombre="DR02" accion="Esperar"/>
+              <dron nombre="DR03" accion="Esperar"/>
+              <dron nombre="DR04" accion="Esperar"/>
+            </tiempo>
+            <tiempo segundos="31">
+              <dron nombre="DR01" accion="Esperar"/>
+              <dron nombre="DR02" accion="Esperar"/>
+              <dron nombre="DR03" accion="Esperar"/>
+              <dron nombre="DR04" accion="Esperar"/>
+            </tiempo>
+            <tiempo segundos="32">
+              <dron nombre="DR01" accion="Esperar"/>
+              <dron nombre="DR02" accion="Esperar"/>
+              <dron nombre="DR03" accion="Esperar"/>
+              <dron nombre="DR04" accion="Esperar"/>
+            </tiempo>
+            <tiempo segundos="33">
+              <dron nombre="DR01" accion="Esperar"/>
+              <dron nombre="DR02" accion="Esperar"/>
+              <dron nombre="DR03" accion="Esperar"/>
+              <dron nombre="DR04" accion="Esperar"/>
+            </tiempo>
+            <tiempo segundos="34">
+              <dron nombre="DR01" accion="Esperar"/>
+              <dron nombre="DR02" accion="Esperar"/>
+              <dron nombre="DR03" accion="Esperar"/>
+              <dron nombre="DR04" accion="Esperar"/>
+            </tiempo>
+            <tiempo segundos="35">
+              <dron nombre="DR01" accion="Esperar"/>
+              <dron nombre="DR02" accion="Esperar"/>
+              <dron nombre="DR03" accion="Esperar"/>
+              <dron nombre="DR04" accion="Esperar"/>
+            </tiempo>
+            <tiempo segundos="36">
+              <dron nombre="DR01" accion="Esperar"/>
+              <dron nombre="DR02" accion="Esperar"/>
+              <dron nombre="DR03" accion="Esperar"/>
+              <dron nombre="DR04" accion="Esperar"/>
+            </tiempo>
+            <tiempo segundos="37">
+              <dron nombre="DR01" accion="Esperar"/>
+              <dron nombre="DR02" accion="Esperar"/>
+              <dron nombre="DR03" accion="Esperar"/>
+              <dron nombre="DR04" accion="Esperar"/>
+            </tiempo>
+            <tiempo segundos="38">
+              <dron nombre="DR01" accion="Esperar"/>
+              <dron nombre="DR02" accion="Esperar"/>
+              <dron nombre="DR03" accion="Esperar"/>
+              <dron nombre="DR04" accion="Esperar"/>
+            </tiempo>
+            <tiempo segundos="39">
+              <dron nombre="DR01" accion="Esperar"/>
+              <dron nombre="DR02" accion="Esperar"/>
+              <dron nombre="DR03" accion="Esperar"/>
+              <dron nombre="DR04" accion="Esperar"/>
+            </tiempo>
+            <tiempo segundos="40">
+              <dron nombre="DR01" accion="Esperar"/>
+              <dron nombre="DR02" accion="Esperar"/>
+              <dron nombre="DR03" accion="Esperar"/>
+              <dron nombre="DR04" accion="Esperar"/>
+            </tiempo>
+            <tiempo segundos="41">
+              <dron nombre="DR01" accion="Esperar"/>
+              <dron nombre="DR02" accion="Esperar"/>
+              <dron nombre="DR03" accion="Esperar"/>
+              <dron nombre="DR04" accion="Esperar"/>
+            </tiempo>
+            <tiempo segundos="42">
+              <dron nombre="DR01" accion="Esperar"/>
+              <dron nombre="DR02" accion="Esperar"/>
+              <dron nombre="DR03" accion="Esperar"/>
+              <dron nombre="DR04" accion="Esperar"/>
+            </tiempo>
+            <tiempo segundos="43">
+              <dron nombre="DR01" accion="Esperar"/>
+              <dron nombre="DR02" accion="Esperar"/>
+              <dron nombre="DR03" accion="Esperar"/>
+              <dron nombre="DR04" accion="Esperar"/>
+            </tiempo>
+            <tiempo segundos="44">
+              <dron nombre="DR01" accion="Esperar"/>
+              <dron nombre="DR02" accion="Esperar"/>
+              <dron nombre="DR03" accion="Esperar"/>
+              <dron nombre="DR04" accion="Esperar"/>
+            </tiempo>
+            <tiempo segundos="45">
+              <dron nombre="DR01" accion="Esperar"/>
+              <dron nombre="DR02" accion="Esperar"/>
+              <dron nombre="DR03" accion="Esperar"/>
+              <dron nombre="DR04" accion="Esperar"/>
+            </tiempo>
+            <tiempo segundos="46">
+              <dron nombre="DR01" accion="Esperar"/>
+              <dron nombre="DR02" accion="Esperar"/>
+              <dron nombre="DR03" accion="Esperar"/>
+              <dron nombre="DR04" accion="Esperar"/>
+            </tiempo>
+            <tiempo segundos="47">
+              <dron nombre="DR01" accion="Esperar"/>
+              <dron nombre="DR02" accion="Esperar"/>
+              <dron nombre="DR03" accion="Esperar"/>
+              <dron nombre="DR04" accion="Esperar"/>
+            </tiempo>
+            <tiempo segundos="48">
+              <dron nombre="DR01" accion="Esperar"/>
+              <dron nombre="DR02" accion="Esperar"/>
+              <dron nombre="DR03" accion="Esperar"/>
+              <dron nombre="DR04" accion="Esperar"/>
+            </tiempo>
+            <tiempo segundos="49">
+              <dron nombre="DR01" accion="Esperar"/>
+              <dron nombre="DR02" accion="Esperar"/>
+              <dron nombre="DR03" accion="Esperar"/>
+              <dron nombre="DR04" accion="Esperar"/>
+            </tiempo>
+            <tiempo segundos="50">
+              <dron nombre="DR01" accion="Esperar"/>
+              <dron nombre="DR02" accion="Esperar"/>
+              <dron nombre="DR03" accion="Esperar"/>
+              <dron nombre="DR04" accion="Esperar"/>
+            </tiempo>
+            <tiempo segundos="51">
+              <dron nombre="DR01" accion="Esperar"/>
+              <dron nombre="DR02" accion="Esperar"/>
+              <dron nombre="DR03" accion="Esperar"/>
+              <dron nombre="DR04" accion="Esperar"/>
+            </tiempo>
+            <tiempo segundos="52">
+              <dron nombre="DR01" accion="Esperar"/>
+              <dron nombre="DR02" accion="Esperar"/>
+              <dron nombre="DR03" accion="Esperar"/>
+              <dron nombre="DR04" accion="Esperar"/>
+            </tiempo>
+            <tiempo segundos="53">
+              <dron nombre="DR01" accion="Esperar"/>
+              <dron nombre="DR02" accion="Esperar"/>
+              <dron nombre="DR03" accion="Esperar"/>
+              <dron nombre="DR04" accion="Esperar"/>
+            </tiempo>
+            <tiempo segundos="54">
+              <dron nombre="DR01" accion="Esperar"/>
+              <dron nombre="DR02" accion="Esperar"/>
+              <dron nombre="DR03" accion="Esperar"/>
+              <dron nombre="DR04" accion="Esperar"/>
+            </tiempo>
+            <tiempo segundos="55">
+              <dron nombre="DR01" accion="Esperar"/>
+              <dron nombre="DR02" accion="Esperar"/>
+              <dron nombre="DR03" accion="Esperar"/>
+              <dron nombre="DR04" accion="Esperar"/>
+            </tiempo>
+            <tiempo segundos="56">
+              <dron nombre="DR01" accion="Esperar"/>
+              <dron nombre="DR02" accion="Esperar"/>
+              <dron nombre="DR03" accion="Esperar"/>
+              <dron nombre="DR04" accion="Esperar"/>
+            </tiempo>
+            <tiempo segundos="57">
+              <dron nombre="DR01" accion="Esperar"/>
+              <dron nombre="DR02" accion="Esperar"/>
+              <dron nombre="DR03" accion="Esperar"/>
+              <dron nombre="DR04" accion="Esperar"/>
+            </tiempo>
+            <tiempo segundos="58">
+              <dron nombre="DR01" accion="Esperar"/>
+              <dron nombre="DR02" accion="Esperar"/>
+              <dron nombre="DR03" accion="Esperar"/>
+              <dron nombre="DR04" accion="Esperar"/>
+            </tiempo>
+            <tiempo segundos="59">
+              <dron nombre="DR01" accion="Esperar"/>
+              <dron nombre="DR02" accion="Esperar"/>
+              <dron nombre="DR03" accion="Esperar"/>
+              <dron nombre="DR04" accion="Esperar"/>
+            </tiempo>
+            <tiempo segundos="60">
+              <dron nombre="DR01" accion="Esperar"/>
+              <dron nombre="DR02" accion="Esperar"/>
+              <dron nombre="DR03" accion="Esperar"/>
+              <dron nombre="DR04" accion="Esperar"/>
+            </tiempo>
+          </instrucciones>
+        </plan>
+      </listaPlanes>
+    </invernadero>
+  </listaInvernaderos>
+</datosSalida>

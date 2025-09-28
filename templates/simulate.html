@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Simulación</title>
+</head>
+<body>
+  <h1>Simulación - {{ gh.nombre }} - {{ plan.nombre }}</h1>
+  <p>Tiempo óptimo (s): {{ tiempo }}</p>
+
+  <h3>Asignación de drones</h3>
+  <table border="1">
+    <tr><th>Dron</th><th>Hilera</th><th>Posición</th></tr>
+    {% for a in assignments %}
+      <tr><td>{{ a.nombre }}</td><td>{{ a.hilera }}</td><td>{{ a.posicion }}</td></tr>
+    {% endfor %}
+  </table>
+
+  <h2>Eficiencia por dron</h2>
+  <table border="1">
+    <tr><th>Dron</th><th>Litros</th><th>Gramos</th></tr>
+    {% for e in eficiencia %}
+      <tr><td>{{ e[0] }}</td><td>{{ e[1] }}</td><td>{{ e[2] }}</td></tr>
+    {% endfor %}
+  </table>
+
+  <h2>Instrucciones</h2>
+  <table border="1">
+    <tr><th>Segundo</th><th>Acciones</th></tr>
+    {% for seg, acciones in timeline %}
+      <tr>
+        <td>{{ seg }}</td>
+        <td>
+          {% for a in acciones %}
+            {{ a[0] }}: {{ a[1] }} {% if not loop.last %} | {% endif %}
+          {% endfor %}
+        </td>
+      </tr>
+    {% endfor %}
+  </table>
+
+  <h2>Descargar Reportes</h2>
+  <ul>
+    <li>
+      <a href="/reports/{{ 'reporte_' + gh.nombre + '_' + plan.nombre + '.html' | replace(' ', '_') }}">
+        Ver reporte HTML
+      </a>
+    </li>
+    <li>
+      <a href="/reports/{{ 'salida_' + gh.nombre + '_' + plan.nombre + '.xml' | replace(' ', '_') }}">
+        Descargar reporte XML
+      </a>
+    </li>
+  </ul>
+
+  <h2>Ver TDA en un tiempo t</h2>
+  <form action="/tda_form" method="post">
+    <input type="hidden" name="invernadero" value="{{ gh.nombre }}">
+    <label>Tiempo t:</label>
+    <input type="number" name="t" value="0" min="0">
+    <button type="submit">Ver TDA</button>
+  </form>
+</body>
+</html>

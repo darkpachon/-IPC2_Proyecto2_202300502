@@ -2,7 +2,7 @@ from tdas import LinkedList
 
 def simulate_plan(greenhouse, plan):
     timeline = LinkedList()
-    snapshots = {}
+    snapshots = {}  
 
     total_entries = 0
     for e in plan.entries:
@@ -17,7 +17,11 @@ def simulate_plan(greenhouse, plan):
 
     segundos = 0
     finished_entries = 0
-    while finished_entries < total_entries:
+    steps = 0
+    max_steps = total_entries * 10  
+
+    while finished_entries < total_entries and steps < max_steps:
+        steps += 1
         segundos += 1
         acciones_this_second_ll = LinkedList()
         current_entry = next_pending_entry()
@@ -25,7 +29,11 @@ def simulate_plan(greenhouse, plan):
 
         for drone in greenhouse.drones:
             action = "Esperar"
-            if current_entry and drone.hilera == current_entry.hilera and drone.posicion == current_entry.posicion and (not current_entry.done) and (not water_done_this_second):
+            if (current_entry and drone.hilera == current_entry.hilera 
+                and drone.posicion == current_entry.posicion 
+                and (not current_entry.done) 
+                and (not water_done_this_second)):
+
                 action = "Regar"
                 plant = greenhouse.find_plant(current_entry.hilera, current_entry.posicion)
                 if plant and not plant.regada:
@@ -35,6 +43,7 @@ def simulate_plan(greenhouse, plan):
                 current_entry.done = True
                 finished_entries += 1
                 water_done_this_second = True
+
             else:
                 target = None
                 for e in plan.entries:
@@ -56,6 +65,7 @@ def simulate_plan(greenhouse, plan):
                         action = f"Atras (H{drone.hilera}P{drone.posicion+1})"
                     else:
                         action = "FIN"
+
             acciones_this_second_ll.add_last((drone.nombre, action))
 
         timeline.add_last((segundos, acciones_this_second_ll))

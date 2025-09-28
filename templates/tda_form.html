@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>Formulario TDA</title></head>
+<body>
+  <h1>Reporte TDA (definir tiempo t)</h1>
+  <form method="post" action="/tda_form">
+    <label>Invernadero:</label>
+    <select name="invernadero">
+      {% for gh in greenhouses %}
+        <option value="{{ gh.nombre }}">{{ gh.nombre }}</option>
+      {% endfor %}
+    </select>
+    <label>Tiempo t (segundos):</label>
+    <input type="number" name="t" value="0" min="0" required>
+    <button type="submit">Generar</button>
+  </form>
+  {% if message %}
+    <p>{{ message }}</p>
+  {% endif %}
+  {% if image_url %}
+    <h2>Estado TDA</h2>
+    <img src="{{ image_url }}" alt="TDA">
+  {% endif %}
+  <p><a href="/">Volver inicio</a></p>
+</body>
+</html>
