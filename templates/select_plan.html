@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>Seleccionar Plan</title></head>
+<body>
+  <h1>Seleccionar Invernadero y Plan</h1>
+  <form action="/simulate" method="post">
+    <label>Invernadero:</label>
+    <select name="invernadero">
+      {% for gh in greenhouses %}
+        <option value="{{ gh.nombre }}">{{ gh.nombre }}</option>
+      {% endfor %}
+    </select>
+    <label>Plan:</label>
+    <select name="plan">
+      {% for gh in greenhouses %}
+        {% for pl in gh.planes %}
+          <option value="{{ pl.nombre }}">{{ pl.nombre }} ({{ gh.nombre }})</option>
+        {% endfor %}
+      {% endfor %}
+    </select>
+    <button type="submit">Simular</button>
+  </form>
+  <p><a href="/tda_form">Ir a formulario TDA</a></p>
+</body>
+</html>
